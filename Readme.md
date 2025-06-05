@@ -8,27 +8,14 @@ A web application built with Flask that allows users to upload an image, select 
 
 - Supports multiple pretrained models: Inception-ResNet, DeepID, ArcFace, FaceNet.
 - Automatically detects if an uploaded image contains a face.
-- Real-time predictions with AJAX to prevent page reload.
-- Loading spinner to indicate processing.
 - Detailed server-side logging for debugging and monitoring.
 - Displays uploaded image alongside prediction result.
 
 ---
 
-## Requirements
-
-- Python 3.10+
-- TensorFlow 2.12
-- Keras 2.12
-- Flask 2.2.5
-- OpenCV (opencv-python-headless) 4.7.0.72
-- NumPy >=1.22, <1.24
-
----
-
 ## Installation
 
-1. Clone the repository:
+1. Clone the repository.
 
 2. Place pretrained TensorFlow/Keras models in the models/ directory from:
     - Inception_ResNet (Accuracy - 97.5%): https://drive.google.com/drive/folders/17o8BelDszOfdoon4u5nii0VGrUAvPF-k?usp=sharing
@@ -36,17 +23,17 @@ A web application built with Flask that allows users to upload an image, select 
     - FaceNet (Accuracy - 80%): https://drive.google.com/drive/folders/1R-eL_trRag-rgCUp8hvFUF9ni0Mo5-OR?usp=sharing
     - DeepID (Accuracy - 71%): https://drive.google.com/drive/folders/1DGW80HZfM6aNxgoWNZ2ZffiR9V4cDJCS?usp=sharing
 
-3. Move to the project folder
+3. Move to the project folder.
 
 4. Start the docker engine and run (build image): 
-```bash docker build -t face_recognition .```
+```docker build -t face_recognition .```
 
 5. Start container at port 5000:
-```bash docker run -it --rm -p 5001:5000 face_recognition```
+```docker run -it --rm -p 5001:5000 face_recognition```
 
 ## Usage
 
-- Open the web app in your browser.
+- Open the web app at http://localhost:5001/ in your browser.
 - Select one of the available face recognition models from the dropdown.
 - Upload an image containing a face.
 - Click Predict.
