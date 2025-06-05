@@ -1,0 +1,5 @@
+tensorflow==2.12
+keras==2.12
+flask==2.2.5
+opencv-python-headless==4.7.0.72
+numpy>=1.22,<1.24
