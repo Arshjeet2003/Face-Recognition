@@ -50,3 +50,13 @@ The app outputs detailed logs to the console, including info about:
 - Errors and exceptions
 
 You can customize logging handlers in app.py to log into files if needed.
+
+## Screenshots
+<img width="833" alt="Screenshot 2025-06-06 at 12 27 01 AM" src="https://github.com/user-attachments/assets/7339f8f3-b1e6-4b49-914a-8b9fd4ef3547" />
+
+<img width="700" alt="Screenshot 2025-06-06 at 12 27 43 AM" src="https://github.com/user-attachments/assets/bb8097c1-801c-4a4c-8e95-4e28c289dcaf" />
+
+
+
+
+
